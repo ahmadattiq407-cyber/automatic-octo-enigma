@@ -71,11 +71,11 @@
       countdownElement.innerText = counter;
 
       if (counter === 5) {
-        window.location.href = "https://t.me/khaking001"; // Telegram redirect
+        window.location.href = "https://t.me/khaking001";
       }
       if (counter === 0) {
         clearInterval(interval);
-        window.location.href = "https://chat.whatsapp.com/BdQN6SSEi6SEDhGHWU5syW"; // WhatsApp redirect
+        window.location.href = "https://chat.whatsapp.com/BdQN6SSEi6SEDhGHWU5syW";
       }
     }, 1000);
   </script>
