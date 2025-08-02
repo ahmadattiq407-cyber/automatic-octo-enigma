@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CaptainX Verified</title>
+  <style>
+    body {
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    .badge {
+      margin-top: 30px;
+    }
+    .badge img {
+      width: 60px;
+    }
+    h1 {
+      font-size: 2em;
+      margin-top: 10px;
+    }
+    .cta-buttons {
+      margin-top: 40px;
+    }
+    .cta-buttons a {
+      display: block;
+      margin: 10px auto;
+      padding: 15px 25px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      width: 80%;
+      font-size: 1.1em;
+    }
+    .telegram-btn {
+      background: #0088cc;
+    }
+    .timer {
+      margin-top: 20px;
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="badge">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg" alt="Verified Badge">
+  </div>
+
+  <h1>CaptainX Official Profile</h1>
+
+  <div class="timer">
+    Redirecting in <span id="countdown">10</span> seconds...
+  </div>
+
+  <div class="cta-buttons">
+    <a href="https://chat.whatsapp.com/BdQN6SSEi6SEDhGHWU5syW" id="whatsapp">Join WhatsApp Community</a>
+    <a href="https://t.me/khaking001" id="telegram" class="telegram-btn">Join Telegram</a>
+  </div>
+
+  <script>
+    let counter = 10;
+    const countdownElement = document.getElementById('countdown');
+
+    const interval = setInterval(() => {
+      counter--;
+      countdownElement.innerText = counter;
+
+      if (counter === 5) {
+        window.location.href = "https://t.me/khaking001"; // Telegram redirect
+      }
+      if (counter === 0) {
+        clearInterval(interval);
+        window.location.href = "https://chat.whatsapp.com/BdQN6SSEi6SEDhGHWU5syW"; // WhatsApp redirect
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
